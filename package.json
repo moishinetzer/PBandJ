@@ -10,7 +10,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "tsc",
-    "release": "changeset publish"
+    // release: build with npm and changeset publish
+    "release": "npm run build && changeset publish"
   },
   "dependencies": {
     "react": "^18.2.0",
