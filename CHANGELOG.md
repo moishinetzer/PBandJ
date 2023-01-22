@@ -1,5 +1,11 @@
 # compote
 
+## 0.0.5
+
+### Patch Changes
+
+- d2676bf: change to tsup
+
 ## 0.0.4
 
 ### Patch Changes
