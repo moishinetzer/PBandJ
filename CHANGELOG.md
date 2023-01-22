@@ -1,5 +1,11 @@
 # compote
 
+## 0.0.8
+
+### Patch Changes
+
+- 6f7eb9b: fix css and al
+
 ## 0.0.7
 
 ### Patch Changes
