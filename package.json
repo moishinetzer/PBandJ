@@ -9,7 +9,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "changeset publish"
   },
   "dependencies": {
     "react": "^18.2.0",
