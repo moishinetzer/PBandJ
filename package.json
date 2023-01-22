@@ -1,7 +1,7 @@
 {
   "name": "pbandj",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
