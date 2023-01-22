@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.ts",
-      name: "Compote",
+      name: "pbandj",
       formats: ["es", "umd"],
       fileName: (format) => `index.${format}.js`,
     },

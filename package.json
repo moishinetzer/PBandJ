@@ -1,7 +1,6 @@
 {
-  "name": "compote",
+  "name": "pbandj",
   "license": "MIT",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.umd.js",
