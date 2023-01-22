@@ -1,5 +1,11 @@
 # compote
 
+## 0.0.9
+
+### Patch Changes
+
+- b0bbe57: typings and other changes
+
 ## 0.0.8
 
 ### Patch Changes
