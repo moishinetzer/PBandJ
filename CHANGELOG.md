@@ -1,5 +1,11 @@
 # compote
 
+## 0.0.6
+
+### Patch Changes
+
+- 2e6d436: include styles
+
 ## 0.0.5
 
 ### Patch Changes
