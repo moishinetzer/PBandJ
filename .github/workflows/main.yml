@@ -15,4 +15,4 @@ jobs:
           cache: "npm"
 
       - run: npm install
-      - run: npm run lint && npm run build
+      - run: npm run check && npm run build
