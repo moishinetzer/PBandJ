@@ -1,5 +1,11 @@
 # compote
 
+## 0.0.7
+
+### Patch Changes
+
+- 8890c95: fix css
+
 ## 0.0.6
 
 ### Patch Changes
