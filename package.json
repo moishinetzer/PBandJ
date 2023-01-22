@@ -3,8 +3,9 @@
   "license": "MIT",
   "version": "0.0.6",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "style": "dist/index.css",
   "files": [
     "dist"
   ],

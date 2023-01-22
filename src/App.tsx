@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Button } from "./Button";
+import { Div } from "./Div";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <Button />
+      <Div />
     </div>
   );
 }
