@@ -1,35 +1,27 @@
 {
   "name": "compote",
+  "license": "MIT",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "lint": "tsc"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.0-alpha.61",
-    "@storybook/addon-interactions": "^7.0.0-alpha.61",
-    "@storybook/addon-links": "^7.0.0-alpha.61",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^7.0.0-alpha.61",
-    "@storybook/react-vite": "^7.0.0-alpha.61",
-    "@storybook/testing-library": "^0.0.13",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
-    "storybook": "^7.0.0-alpha.61",
-    "tailwindcss": "^3.2.4",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "@changesets/cli": "^2.26.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
   }
 }
