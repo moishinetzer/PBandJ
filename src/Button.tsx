@@ -1,3 +1,3 @@
 export function Button() {
-  return <button>This is a custom button</button>;
+  return <button>This is the pbandj button</button>;
 }
