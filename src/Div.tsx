@@ -1,10 +1,5 @@
-import "./App.css";
-import "./index.css";
+import "./Div.css";
 
 export function Div() {
-  return (
-    <div>
-      <h1>Div Word</h1>
-    </div>
-  );
+  return <div className="div">Div Word</div>;
 }
