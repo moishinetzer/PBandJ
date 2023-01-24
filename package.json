@@ -3,11 +3,14 @@
   "license": "MIT",
   "version": "0.0.10",
   "type": "module",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.umd.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
   },
   "files": [
     "dist"
@@ -19,18 +22,19 @@
     "release": "npm run check && npm run build && changeset publish"
   },
   "dependencies": {
-    "postcss": "^8.4.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rollup-plugin-postcss": "^4.0.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitejs/plugin-react": "^3.0.1",
+    "postcss": "^8.4.21",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
+    "vite-plugin-css-injected-by-js": "^2.4.0",
     "vite-plugin-dts": "^1.7.1"
   }
 }
