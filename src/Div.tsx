@@ -1,3 +1,6 @@
+import "./App.css";
+import "./index.css";
+
 export function Div() {
   return (
     <div>

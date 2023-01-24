@@ -1,11 +1,14 @@
 {
   "name": "pbandj",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsup",
