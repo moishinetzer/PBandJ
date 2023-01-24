@@ -1,5 +1,12 @@
 # compote
 
+## 0.0.10
+
+### Patch Changes
+
+- ba360be: css modules only
+- 2104704: types
+
 ## 0.0.9
 
 ### Patch Changes
