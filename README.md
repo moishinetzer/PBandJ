@@ -1,14 +1,12 @@
 # Pbandj
 
-![Pbandj Logo](/public/logo-small.png)
+<img src="https://github.com/moishinetzer/Pbandj/blob/main/public/logo.png" width=150 alt="pbandj logo" />
 
 The Stylistic Reusable Component Framework
 
 ## Installation
 
-```sh
-npx compote init
-```
+WIP: For now, clone the repo
 
 ## Description
 
