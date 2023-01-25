@@ -1,5 +1,11 @@
 # compote
 
+## 0.1.0
+
+### Minor Changes
+
+- d75f962: This release finalises the main initial structure, including storybook, optimised imports and exports, type-safe by default and tons more. Still very early alpha, however there are tons of fun-packed features in this release!
+
 ## 0.0.11
 
 ### Patch Changes
