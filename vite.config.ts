@@ -6,11 +6,17 @@ import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts(), cssInjectedByJsPlugin()],
-  // Build components from src/index.ts
+  plugins: [
+    react(),
+    dts({
+      include: ["lib/**/*.ts"],
+    }),
+    cssInjectedByJsPlugin(),
+  ],
+  // Build components from lib/index.ts
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"),
+      entry: resolve(__dirname, "lib/index.ts"),
       name: "pbandj",
       fileName: "index",
     },

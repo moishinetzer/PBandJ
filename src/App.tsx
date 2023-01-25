@@ -1,7 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import { Button } from "./Button";
-import { Div } from "./Div";
+import { Button, Div } from "../lib";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,8 +27,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      Special:
       <Button />
       <Div />
+      Regular:
+      <button className="button">Button</button>
+      <div className="div">Div</div>
     </div>
   );
 }
