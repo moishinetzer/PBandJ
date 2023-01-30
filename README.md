@@ -1,4 +1,4 @@
-# Pbandj
+# PBandJ
 
 <img src="https://github.com/moishinetzer/Pbandj/blob/main/public/logo.png" width=150 alt="pbandj logo" />
 
