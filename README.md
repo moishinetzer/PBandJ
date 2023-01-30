@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://raw.githubusercontent.com/moishinetzer/PBandJ/main/public/logo.png" width="300px" /></h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/moishinetzer/PBandJ/main/public/logo.png" width="400px" /></h1>
 
 <p align="center">
   <b>The Stylistic Reusable Component Framework</b>
