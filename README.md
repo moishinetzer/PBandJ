@@ -1,6 +1,12 @@
-# PBandJ
+<h1 align="center"><img src="https://raw.githubusercontent.com/moishinetzer/PBandJ/main/public/logo.png" width="300px" /></h1>
 
-<img src="https://github.com/moishinetzer/Pbandj/blob/main/public/logo.png" width=150 alt="pbandj logo" />
+<p align="center">
+  <b>The Stylistic Reusable Component Framework</b>
+</p>
+
+---
+
+## Introduction
 
 The Stylistic Reusable Component Framework
 
