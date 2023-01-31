@@ -7,8 +7,12 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "scripts/init.js"
   ],
+  "bin": {
+    "pbandj": "scripts/init.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -36,7 +40,6 @@
     "@types/react-dom": "^18.0.9",
     "@types/recursive-readdir": "^2.2.1",
     "@vitejs/plugin-react": "^3.0.1",
-    "chalk": "^5.2.0",
     "inquirer": "^9.1.4",
     "kolorist": "^1.6.0",
     "postcss": "^8.4.21",

@@ -1,17 +1,18 @@
 #!/usr/bin/env node
+// @ts-check
+
 import { execSync } from "child_process";
-import inquirer from "inquirer";
 import fs from "fs";
+import inquirer from "inquirer";
 import {
-  bold,
-  underline,
-  yellow,
   blue,
-  magenta,
+  bold,
   lightMagenta,
+  magenta,
+  underline,
   white,
+  yellow,
 } from "kolorist";
-import { PackageJson } from "type-fest";
 
 // prettier-ignore
 let PBandJ = `
@@ -55,7 +56,7 @@ await inquirer
       },
     },
   ])
-  .then((answers: { libraryName: string }) => {
+  .then((answers) => {
     // Clone the repo to a folder called the library name
     execSync(
       `git clone https://github.com/moishinetzer/PBandJ.git "${answers.libraryName}"`,
@@ -68,9 +69,9 @@ await inquirer
     process.chdir(`./${answers.libraryName}`);
 
     const packageJsonPath = "./package.json";
-    const packageJson = JSON.parse(
-      fs.readFileSync(packageJsonPath, "utf-8")
-    ) as PackageJson;
+
+    /** @type { import("type-fest").PackageJson } */
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
     packageJson.name = answers.libraryName;
     packageJson.version = "0.0.1";
 
@@ -86,7 +87,7 @@ await inquirer
       default: false,
     },
   ])
-  .then((answers: { installDependencies: boolean }) => {
+  .then((answers) => {
     if (!answers.installDependencies) {
       console.log(
         white(

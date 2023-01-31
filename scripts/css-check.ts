@@ -1,5 +1,5 @@
 import recursive from "recursive-readdir";
-import chalk from "chalk";
+import { blue, bold } from "kolorist";
 
 // TODO: Change to relative path
 recursive("./lib", ["stories"], (error, files) => {
@@ -12,7 +12,7 @@ recursive("./lib", ["stories"], (error, files) => {
 
         throw new Error(
           // prettier-ignore
-          `Only CSS modules are supported. Rename ${chalk.blue(chalk.bold(fileName + ".css"))} to ${chalk.blue(chalk.bold(fileName + ".module.css"))}`
+          `Only CSS modules are supported. Rename ${blue(bold(fileName + ".css"))} to ${blue(bold(fileName + ".module.css"))}`
         );
       }
     });
