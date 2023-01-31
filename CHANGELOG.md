@@ -1,5 +1,11 @@
 # compote
 
+## 0.1.2
+
+### Patch Changes
+
+- 2d44982: Add init command via npx
+
 ## 0.1.1
 
 ### Patch Changes
