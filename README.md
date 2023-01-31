@@ -1,18 +1,20 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/moishinetzer/PBandJ/main/public/logo.png" width="400px" /></h1>
 
 <p align="center">
-  <b>The Stylistic Reusable Component Framework</b>
+  <b>The Reusable Component Framework</b>
 </p>
 
 ---
 
 ## Introduction
 
-The Stylistic Reusable Component Framework
+The Reusable Component Framework for React
 
 ## Installation
 
-WIP: For now, clone the repo
+```sh
+npx pbandj@latest
+```
 
 ## Description
 
