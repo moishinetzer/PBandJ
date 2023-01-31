@@ -1,5 +1,11 @@
 # compote
 
+## 0.1.3
+
+### Patch Changes
+
+- cdd84f9: fix npx
+
 ## 0.1.2
 
 ### Patch Changes
