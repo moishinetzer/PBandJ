@@ -2,4 +2,4 @@
 "pbandj": patch
 ---
 
-remove useless file
+fix npx
