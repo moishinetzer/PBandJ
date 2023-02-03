@@ -1,5 +1,11 @@
 # compote
 
+## 0.1.4
+
+### Patch Changes
+
+- 0020f67: move to tsup
+
 ## 0.1.3
 
 ### Patch Changes
