@@ -22,7 +22,7 @@ npx pbandj@latest
 
 Which will run you through the tasty CLI to get your project set up full batteries included!
 
-## Whats Inside
+## What's Inside
 
 - ⚛️ React Support
 - 💙 TypeScript by default
@@ -31,11 +31,6 @@ Which will run you through the tasty CLI to get your project set up full batteri
 - 🦋 Changesets for versioning
 - 🤖 GitHub actions for deploying and testing
 - 📦 Tsup for building and bundling
-
-## What's included
-
-- Storybook
-- (Other defaults)
 
 ## Integrations
 
