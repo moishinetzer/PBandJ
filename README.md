@@ -25,12 +25,18 @@ Which will run you through the tasty CLI to get your project set up full batteri
 ## What's Inside
 
 - ⚛️ React Support
+
 - 💙 TypeScript by default
-- ⚡ Vite dev server
-- 📕 Storybook v7 running on Vite for instant HMR
-- 🦋 Changesets for versioning
-- 🤖 GitHub actions for deploying and testing
+
 - 📦 Tsup for building and bundling
+
+- 📕 Storybook v7 running on Vite for instant HMR
+
+- ⚡ Vite dev server
+
+- 🦋 Changesets for versioning
+
+- 🤖 GitHub actions for deploying and testing
 
 ## Integrations
 
