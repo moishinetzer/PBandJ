@@ -8,7 +8,9 @@
 
 ## Introduction
 
-Creating your own component library and publishing it is extremely tedious! PBandJ takes care of wiring everything together, like dealing with bundlers and setting up integrations. It gives you all the tools you will need to create a high quality component library, and publish it to be reused or shared with others!
+Constructing a component library and publishing it is extremely tedious! In addition, dealing with bundlers, setting up integrations and using best practices can be a headache.
+
+PBandJ sets you up with all the tools you will need to create a high-quality component library and publish it to be reused or shared with others!
 
 ## Installation
 
