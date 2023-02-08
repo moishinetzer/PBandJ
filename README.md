@@ -8,19 +8,27 @@
 
 ## Introduction
 
-The Reusable Component Framework for React
+Creating your own component library and publishing it is extremely tedious! PBandJ takes care of wiring everything together, like dealing with bundlers and setting up integrations. It gives you all the tools you will need to create a high quality component library, and publish it to be reused or shared with others!
 
 ## Installation
+
+To get started run the following:
 
 ```sh
 npx pbandj@latest
 ```
 
-## Description
+Which will run you through the tasty CLI to get your project set up full batteries included!
 
-- Explain what Compote solves
+## Whats Inside
 
-- Explain what it runs on (vite)
+- ⚛️ React Support
+- 💙 TypeScript by default
+- ⚡ Vite dev server
+- 📕 Storybook v7 running on Vite for instant HMR
+- 🦋 Changesets for versioning
+- 🤖 GitHub actions for deploying and testing
+- 📦 Tsup for building and bundling
 
 ## What's included
 
