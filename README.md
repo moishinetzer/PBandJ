@@ -38,17 +38,84 @@ This will run you through the CLI to get your project set up with all the tools 
 
 ## 📦 Bundling
 
+This project uses [tsup][] for bundling.
+
+Everything that PBandJ uses is hot-swappable. Meaning, if you don't want to use tsup as a bundler for whatever reason you can easily change it to your favourite bundler.
+
+You can edit the `tsup.config.ts` file to your liking.
+
+For example, if you wanted to enable code-splitting and minify the code your config would look like this:
+
+```ts
+// tsup.config.ts
+
+export default defineConfig({
+  // ...
+  splitting: true,
+  minify: true,
+});
+```
+
+### CSS Caveat
+
+Most bundlers don't bundle CSS by default at all. When they do, it usually requires injecting the styles directly into the head tag, which means that any classes you define could potentially clash with any other project that uses your library.
+
+For this reason, we _highly_ recommend only using CSS Modules (which is what the `css-check` script checks for) and PostCSS plugins for other transformations.
+
 ## 📕 Storybook
 
 ## ⚡ Vite Dev Server
 
+Each project is preconfigured with a [Vite][] dev server that can be started by running:
+
+```sh
+npm run dev
+```
+
+This has been provided for those that like to create components in a playground rather than a storybook-first approach
+
 ## 🦋 Changesets
 
+[Changesets][] are used to version your library, and publish it to npm.
+
+To create a changesets run:
+
+```sh
+npx changeset
+```
+
+Commit the generated changelog to trigger the GitHub Action mentioned [below](#🤖-github-actions).
+
+The files that you commit alongside the generated changeset log are the changes that will be referenced in the release notes. This means you can commit the changeset log by itself to just trigger the publish without referencing the exact files.
+
 ## 🤖 GitHub Actions
+
+There are two actions provided out of the box located in the `.github/workflows` folder.
+
+`main.yml`:
+
+- This action is run on all branches.
+- It runs typechecking, and performs a build to make sure it can be built safely.
+
+`publish.yml`
+
+- This action is run on the `main` branch
+- If there is a changeset that was committed, a PR is created that when merged will automatically publish that version to npm.
+- If a publishing PR already exists, the changes are added to that release PR.
 
 ## 🧪 Testing
 
 ## Future Features
+
+There is a planned configuration to be added to the CLI, that will allow simple setup of popular styling frameworks.
+
+These are an example of some that could be added to help users get set up automatically.
+
+- TailwindCSS
+- ChakraUI
+- MUI
+- Bootstrap
+- Ant Design
 
 ## Contributors
 
@@ -75,3 +142,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+[tsup]: https://tsup.egoist.dev/
+[vite]: https://vitejs.dev/
+[changesets]: https://github.com/changesets/changesets
