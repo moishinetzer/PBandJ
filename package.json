@@ -18,6 +18,9 @@
     "build": "run-s build:*",
     "build:lib": "tsup lib/index.ts --dts",
     "build:cli": "tsup scripts/cli.ts --dts --format cjs",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
     "check": "tsc && npm run css-check",
     "release": "npm run check && npm run build && changeset publish",
     "storybook": "storybook dev -p 6006",
@@ -31,6 +34,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
+    "@frontside/eslint-config": "^3.1.0",
     "@storybook/addon-essentials": "^7.0.0-beta.33",
     "@storybook/addon-interactions": "^7.0.0-beta.33",
     "@storybook/addon-links": "^7.0.0-beta.33",
@@ -42,12 +46,15 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@types/recursive-readdir": "^2.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@vitejs/plugin-react": "^3.0.1",
     "chalk": "^5.2.0",
     "esbuild-css-modules-plugin": "^2.7.1",
+    "eslint": "^8.33.0",
     "inquirer": "^9.1.4",
     "kolorist": "^1.6.0",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
     "recursive-readdir": "^2.2.3",
     "rollup-plugin-postcss": "^4.0.2",
@@ -58,6 +65,7 @@
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-css-injected-by-js": "^2.4.0",
-    "vite-plugin-dts": "^1.7.1"
+    "vite-plugin-dts": "^1.7.1",
+    "vitest": "^0.28.4"
   }
 }

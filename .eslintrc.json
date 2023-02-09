@@ -1,0 +1,17 @@
+{
+  "extends": "@frontside",
+  "rules": {
+    "eol-last": "off",
+    "@typescript-eslint/no-extra-semi": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "no-multi-spaces": "off",
+    "no-trailing-spaces": "off",
+    "object-curly-spacing": "off",
+    "semi": "off",
+    "no-console": "warn",
+    "prefer-let/prefer-let": "off"
+  },
+  "ignorePatterns": ["playground"]
+}

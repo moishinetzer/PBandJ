@@ -16,6 +16,5 @@
     "noUncheckedIndexedAccess": true,
     "noEmit": true,
     "jsx": "react-jsx"
-  },
-  "references": [{ "path": "./tsconfig.node.json" }]
+  }
 }

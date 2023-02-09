@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 import { execSync } from "child_process";
 import inquirer from "inquirer";
 import fs from "fs";
@@ -11,7 +12,7 @@ import {
   lightMagenta,
   white,
 } from "kolorist";
-import { PackageJson } from "type-fest";
+import type { PackageJson } from "type-fest";
 
 // prettier-ignore
 let PBandJ = `
@@ -43,7 +44,7 @@ console.log(
         type: "input",
         name: "libraryName",
         message: "What do you want to call your component library?",
-        validate(input, answers) {
+        validate(input) {
           const isValid = input.match(
             "^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
           );

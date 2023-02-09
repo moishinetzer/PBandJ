@@ -4,6 +4,7 @@ import { blue, bold } from "kolorist";
 // TODO: Change to relative path
 recursive("./lib", ["stories"], (error, files) => {
   if (error) {
+    // eslint-disable-next-line no-console
     console.error(error);
   } else {
     files.forEach((file) => {

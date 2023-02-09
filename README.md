@@ -24,6 +24,12 @@ PBandJ is an all-in-one tool to quickly create and publish a high-quality compon
 
 - 🦋 Changesets for versioning
 
+- 🧪 Vitest for testing
+
+- 🕵️‍♂️ Eslint for linting
+
+- 💅 Prettier for formatting
+
 ## Installation
 
 To get started run the following:
@@ -40,7 +46,7 @@ This will run you through the CLI to get your project set up with all the tools 
 
 This project uses [tsup][] for bundling.
 
-Everything that PBandJ uses is hot-swappable. Meaning, if you don't want to use tsup as a bundler for whatever reason you can easily change it to your favourite bundler.
+Everything that PBandJ uses is hot-swappable. Meaning, if you don't want to use tsup as a bundler for whatever reason you can easily change it to your favourite bundler. Change the `build` scripts in `package.json` to whatever you want.
 
 You can edit the `tsup.config.ts` file to your liking.
 
@@ -63,6 +69,18 @@ Most bundlers don't bundle CSS by default at all. When they do, it usually requi
 For this reason, we _highly_ recommend only using CSS Modules (which is what the `css-check` script checks for) and PostCSS plugins for other transformations.
 
 ## 📕 Storybook
+
+[Storybook][] has been preconfigured to run on Vite, which means that you get instant HMR when developing your components. This is a huge productivity boost when developing components.
+
+To start storybook run:
+
+```sh
+npm run storybook
+```
+
+PBandJ utilises version 7 of Storybook, which means that you can use the new Component Story Format (CSF) to write your stories.
+
+Check out the [official documentation][] for more information on how to make the most out of the awesome features that Storybook provides.
 
 ## ⚡ Vite Dev Server
 
@@ -105,6 +123,18 @@ There are two actions provided out of the box located in the `.github/workflows`
 
 ## 🧪 Testing
 
+There are several approaches to testing components that has been provided out of the box.
+
+### Vitest
+
+[Vitest][] is a testing framework that is built on top of Vite. It is a great choice for testing components, as it provides a fast and easy way to test components. It's mainly used to test the functionality of components, rather than the visual aspects, however it can be used for both.
+
+To run the tests, run:
+
+```sh
+npm run test
+```
+
 ## Future Features
 
 There is a planned configuration to be added to the CLI, that will allow simple setup of popular styling frameworks.
@@ -145,8 +175,11 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 This project is licensed under the terms of the MIT license.
 
 [tsup]: https://tsup.egoist.dev/
+[storybook]: https://storybook.js.org/
+[official documentation]: https://storybook.js.org/docs/7.0/react/get-started/introduction
 [vite]: https://vitejs.dev/
 [changesets]: https://github.com/changesets/changesets
+[vitest]: https://vitest.dev/
 [tailwindcss]: https://tailwindcss.com/
 [chakraui]: https://chakra-ui.com/
 [ant design]: https://ant.design/
