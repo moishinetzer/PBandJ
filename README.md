@@ -17,7 +17,7 @@ PBandJ is an all-in-one tool to quickly create and publish a high-quality compon
 - 📦 Tsup for building and bundling
 
 - 🤖 GitHub Actions for publishing to npm and testing
--
+
 - 📕 Storybook v7 running on Vite for instant HMR
 
 - ⚡ Vite playground dev server
