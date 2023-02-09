@@ -72,7 +72,7 @@ Each project is preconfigured with a [Vite][] dev server that can be started by 
 npm run dev
 ```
 
-This has been provided for those that like to create components in a playground rather than a storybook-first approach
+This has been provided for those that like to create components in a playground rather than a storybook-first approach.
 
 ## 🦋 Changesets
 
@@ -84,7 +84,7 @@ To create a changesets run:
 npx changeset
 ```
 
-Commit the generated changelog to trigger the GitHub Action mentioned [below](#🤖-github-actions).
+Commit the generated changelog to trigger the GitHub Action mentioned [below](#-github-actions).
 
 The files that you commit alongside the generated changeset log are the changes that will be referenced in the release notes. This means you can commit the changeset log by itself to just trigger the publish without referencing the exact files.
 
