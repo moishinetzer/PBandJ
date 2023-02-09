@@ -8,9 +8,21 @@
 
 ## Introduction
 
-Constructing a component library and publishing it is extremely tedious! In addition, dealing with bundlers, setting up integrations and using best practices can be a headache.
+PBandJ is an all-in-one tool to quickly create and publish a high-quality component library, taking care of tedious setup and ensuring best practices. Publish your library to be reused across projects or shared with others!
 
-PBandJ sets you up with all the tools you will need to create a high-quality component library and publish it to be reused or shared with others!
+## What's Inside
+
+- ⚛️ React, with TypeScript by default
+
+- 📦 Tsup for building and bundling
+
+- 📕 Storybook v7 running on Vite for instant HMR
+
+- ⚡ Vite playground dev server
+
+- 🦋 Changesets for versioning
+
+- 🤖 GitHub Actions for deploying and testing
 
 ## Installation
 
@@ -20,31 +32,35 @@ To get started run the following:
 npx pbandj@latest
 ```
 
-Which will run you through the tasty CLI to get your project set up full batteries included!
+This will run you through the CLI to get your project set up with all the tools you need to get started!
 
-## What's Inside
+---
 
-- ⚛️ React Support
+## 📦 Bundling
 
-- 💙 TypeScript by default
+## 📕 Storybook
 
-- 📦 Tsup for building and bundling
+## ⚡ Vite Dev Server
 
-- 📕 Storybook v7 running on Vite for instant HMR
+## 🦋 Changesets
 
-- ⚡ Vite dev server
+## 🤖 GitHub Actions
 
-- 🦋 Changesets for versioning
+## 🧪 Testing
 
-- 🤖 GitHub actions for deploying and testing
+## Future Features
 
-## Integrations
+## Contributing
 
-- TailwindCSS
-- ChakraUI
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 
-## Best Practices
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-- Always use forwardRef's
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## Notes
+## License
+
+This project is licensed under the terms of the MIT license.
