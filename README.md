@@ -111,11 +111,12 @@ There is a planned configuration to be added to the CLI, that will allow simple 
 
 These are an example of some that could be added to help users get set up automatically.
 
-- TailwindCSS
-- ChakraUI
-- MUI
-- Bootstrap
-- Ant Design
+- [TailwindCSS][]
+- [ChakraUI][]
+- [Ant Design][]
+- [Emotion][]
+- [Styled Components][]
+- [Material UI][]
 
 ## Contributors
 
@@ -146,3 +147,9 @@ This project is licensed under the terms of the MIT license.
 [tsup]: https://tsup.egoist.dev/
 [vite]: https://vitejs.dev/
 [changesets]: https://github.com/changesets/changesets
+[tailwindcss]: https://tailwindcss.com/
+[chakraui]: https://chakra-ui.com/
+[ant design]: https://ant.design/
+[emotion]: https://emotion.sh/
+[styled components]: https://styled-components.com/
+[material ui]: https://material-ui.com/
