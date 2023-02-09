@@ -1,4 +1,7 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/moishinetzer/PBandJ/main/public/logo.png" width="400px" /></h1>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
   <b>The Reusable Component Framework For React</b>
@@ -55,6 +58,13 @@ This will run you through the CLI to get your project set up with all the tools 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://mnetzer.com"><img src="https://avatars.githubusercontent.com/u/11411486?v=4?s=100" width="100px;" alt="Moishi Netzer"/><br /><sub><b>Moishi Netzer</b></sub></a><br /><a href="https://github.com/moishinetzer/PBandJ/commits?author=moishinetzer" title="Code">💻</a> <a href="https://github.com/moishinetzer/PBandJ/commits?author=moishinetzer" title="Documentation">📖</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
@@ -64,3 +74,16 @@ This will run you through the CLI to get your project set up with all the tools 
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
