@@ -1,5 +1,11 @@
 # compote
 
+## 0.2.0
+
+### Minor Changes
+
+- 64d49f4: Update README for full explanation
+
 ## 0.1.4
 
 ### Patch Changes
