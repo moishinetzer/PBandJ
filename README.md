@@ -113,6 +113,7 @@ There are two actions provided out of the box located in the `.github/workflows`
 `main.yml`:
 
 - This action is run on all branches.
+- It runs linting, tests, and typechecking.
 - It runs typechecking, and performs a build to make sure it can be built safely.
 
 `publish.yml`
@@ -123,7 +124,7 @@ There are two actions provided out of the box located in the `.github/workflows`
 
 ## 🧪 Testing
 
-There are several approaches to testing components that has been provided out of the box.
+There are several approaches to testing components that have been provided out of the box.
 
 ### Vitest
 
@@ -134,6 +135,14 @@ To run the tests, run:
 ```sh
 npm run test
 ```
+
+### Storybook Tests
+
+The recommended way to run storybook tests is to use the [Chromatic][] integration. This is a service that allows you to run visual regression tests on your components.
+
+The setup steps can be found [here][chromatic-setup].
+
+Once that has been set up, you can use the Storybook play function to run integration tests on your components. See the [official documentation][storybook-play-functions] for more information.
 
 ## Future Features
 
@@ -147,6 +156,7 @@ These are an example of some that could be added to help users get set up automa
 - [Emotion][]
 - [Styled Components][]
 - [Material UI][]
+- [Chromatic][]
 
 ## Contributors
 
@@ -180,9 +190,12 @@ This project is licensed under the terms of the MIT license.
 [vite]: https://vitejs.dev/
 [changesets]: https://github.com/changesets/changesets
 [vitest]: https://vitest.dev/
+[chromatic-setup]: https://storybook.js.org/docs/7.0/react/writing-tests/visual-testing#setup-chromatic-addon
+[storybook-play-functions]: https://storybook.js.org/docs/7.0/react/writing-tests/interaction-testing
 [tailwindcss]: https://tailwindcss.com/
 [chakraui]: https://chakra-ui.com/
 [ant design]: https://ant.design/
 [emotion]: https://emotion.sh/
 [styled components]: https://styled-components.com/
 [material ui]: https://material-ui.com/
+[chromatic]: https://www.chromatic.com/
