@@ -30,7 +30,7 @@ PBandJ is an all-in-one tool to quickly create and publish a high-quality compon
 
 - 💅 Prettier for formatting
 
-## Installation
+## Getting Started
 
 To get started run the following:
 
