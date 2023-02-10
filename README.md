@@ -158,6 +158,12 @@ These are an example of some that could be added to help users get set up automa
 - [Material UI][]
 - [Chromatic][]
 
+## Projects Made With PBandJ
+
+Get us started by sharing your component library! 
+
+Open up an [issue][new-project-issue]
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -199,3 +205,4 @@ This project is licensed under the terms of the MIT license.
 [styled components]: https://styled-components.com/
 [material ui]: https://material-ui.com/
 [chromatic]: https://www.chromatic.com/
+[new-project-issue]: https://github.com/moishinetzer/PBandJ/issues/new?title=[Example%20Project]:%20&body=Please%20add%20this%20project%20that%20was%20created%20with%20PBandJ%20to%20the%20README:
