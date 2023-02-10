@@ -158,11 +158,11 @@ These are an example of some that could be added to help users get set up automa
 - [Material UI][]
 - [Chromatic][]
 
-## Projects Made With PBandJ
+## Made With PBandJ
 
 Get us started by sharing your component library! 
 
-Open up an [issue][new-project-issue]
+Open up an issue [here][new-project-issue].
 
 ## Contributors
 
