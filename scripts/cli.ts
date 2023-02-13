@@ -135,7 +135,7 @@ console.log(
 
   console.log(
     "\n" +
-      blue("cd " + libraryName) +
+      bold(blue("cd " + libraryName)) +
       "\n" +
       "\n" +
       white("You can now start developing your component library! Enjoy! 🥜💜")
