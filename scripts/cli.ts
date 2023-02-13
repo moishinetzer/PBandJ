@@ -109,7 +109,7 @@ console.log(
       }
 
       execSync("npm install", {
-        stdio: "ignore",
+        stdio: "inherit",
       });
     });
 
