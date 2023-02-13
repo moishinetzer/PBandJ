@@ -38,6 +38,8 @@ console.log(
 );
 
 (async () => {
+  let libraryName = "";
+
   await inquirer
     .prompt([
       {
@@ -58,6 +60,8 @@ console.log(
       },
     ])
     .then((answers: { libraryName: string }) => {
+      libraryName = answers.libraryName;
+
       // Clone the repo to a folder called the library name
       execSync(
         `git clone https://github.com/moishinetzer/PBandJ.git "${answers.libraryName}"`,
@@ -75,6 +79,9 @@ console.log(
       ) as PackageJson;
       packageJson.name = answers.libraryName;
       packageJson.version = "0.0.1";
+
+      delete packageJson.scripts?.["build:cli"];
+      delete packageJson.bin;
 
       fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     });
@@ -102,16 +109,35 @@ console.log(
       }
 
       execSync("npm install", {
-        stdio: "inherit",
+        stdio: "ignore",
       });
     });
 
+  // delete the .git folder
+  execSync("rm -rf .git", {
+    stdio: "ignore",
+  });
+
+  // delete scripts/cli.ts
+  execSync("rm -rf scripts/cli.ts", {
+    stdio: "ignore",
+  });
+
+  // delete CHANGELOG.md
+  execSync("rm -rf CHANGELOG.md", {
+    stdio: "ignore",
+  });
+
+  // delete .all-contributorsrc
+  execSync("rm -rf .all-contributorsrc", {
+    stdio: "ignore",
+  });
+
   console.log(
-    bold(
-      white(
-        "\n" +
-          "You can now start developing your component library! Enjoy! 🥜💜"
-      )
-    )
+    "\n" +
+      blue("cd " + libraryName) +
+      "\n" +
+      "\n" +
+      white("You can now start developing your component library! Enjoy! 🥜💜")
   );
 })();
