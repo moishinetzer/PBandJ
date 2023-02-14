@@ -1,5 +1,11 @@
-import styles from "./Div.module.css";
+import "./test.css?raw";
+import moduleStyles from "./Div.module.css";
 
 export function Div() {
-  return <div className={styles.div}>Div Word</div>;
+  return (
+    <div className={moduleStyles.div}>
+      Div
+      <button>ok</button>
+    </div>
+  );
 }
