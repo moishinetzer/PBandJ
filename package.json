@@ -21,7 +21,6 @@
     "test": "vitest run",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
     "check": "tsc && npm run css-check",
     "release": "npm run check && npm run build && changeset publish",
     "storybook": "storybook dev -p 6006",
