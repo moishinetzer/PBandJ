@@ -1,10 +1,15 @@
+import { useState } from "react";
 import style from "./Button.module.css";
-import { welcomeMessage } from "./utils";
 
 export function Button() {
+  let [count, setCount] = useState(0);
+
   return (
-    <button className={style.button}>
-      {welcomeMessage("Adam")} This is the pbandj button
+    <button
+      onClick={() => setCount((count) => count + 1)}
+      className={style.button}
+    >
+      Count is {count}
     </button>
   );
 }
