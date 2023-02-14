@@ -29,3 +29,38 @@
 .button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.primary {
+  background-color: #646cff;
+  color: #fff;
+  border-color: #646cff;
+}
+.primary:hover {
+  background-color: #4f4fff;
+  border-color: #4f4fff;
+}
+
+.secondary {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  border-color: #f2f2f2;
+}
+.secondary:hover {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+.small {
+  padding: 0.4em 0.8em;
+  font-size: 0.8em;
+}
+
+.medium {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
+
+.large {
+  padding: 0.8em 1.6em;
+  font-size: 1.2em;
+}
