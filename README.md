@@ -42,6 +42,42 @@ This will run you through the CLI to get your project set up with all the tools 
 
 ---
 
+## 🚀 Publishing
+
+To publish your library to npm, you need to follow the steps below.
+
+### 1. Generate a Personal Access Token
+
+To publish your library to npm, you need to generate a personal access token. This is a token that is used to authenticate you when publishing to npm. You can generate one [here][npm-token].
+
+If your account requires 2FA, you will need to generate an `Automation` token, otherwise, a `Publish` token will suffice.
+
+### 2. Add the Token to GitHub Secrets
+
+Once you have generated your token, you need to add it to your GitHub repository as a secret. This is so that the GitHub Action can use it to publish your library to npm. You can find out how to do this [here][github-secrets].
+
+### 3. Commit a Changeset
+
+Once you have added your token to GitHub secrets, you need to commit a changeset. Generate your first changeset by running:
+
+```sh
+npx changeset
+```
+
+Then commit the changeset log to trigger the GitHub Action.
+
+See [below](#-changesets) for more information on how to use changesets.
+
+### 4. Merge the Release PR
+
+Once the GitHub Action has been triggered, it will create a PR that will publish your library to npm. Once the PR has been merged, your library will be published to npm!
+
+> Note: Sometimes the GitHub Action can fail, this can be due to a number of reasons most likely it is to do with the name of your package. If this happens, change the name of your package in `package.json`, and try again from step 3.
+
+### Publishing from a private repository
+
+If you are publishing from a private repository, you need to change the workflow permissions on GitHub. This can be done by going to the `Settings` tab of your repository, then going to `Actions` and then `General` and changing the Workflow Permissions to allow "Read and Write permissions", and make sure the box that says "Allow GitHub Actions to create and approve pull requests" is checked.
+
 ## 📦 Bundling
 
 This project uses [tsup][] for bundling.
@@ -160,7 +196,7 @@ These are an example of some that could be added to help users get set up automa
 
 ## Made With PBandJ
 
-Get us started by sharing your component library! 
+Get us started by sharing your component library!
 
 Open up an issue [here][new-project-issue].
 
@@ -190,6 +226,8 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 This project is licensed under the terms of the MIT license.
 
+[npm-token]: https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens
+[github-secrets]: https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository
 [tsup]: https://tsup.egoist.dev/
 [storybook]: https://storybook.js.org/
 [official documentation]: https://storybook.js.org/docs/7.0/react/get-started/introduction
@@ -205,4 +243,5 @@ This project is licensed under the terms of the MIT license.
 [styled components]: https://styled-components.com/
 [material ui]: https://material-ui.com/
 [chromatic]: https://www.chromatic.com/
+
 [new-project-issue]: https://github.com/moishinetzer/PBandJ/issues/new?title=[Example%20Project]:%20&body=Please%20add%20this%20project%20that%20was%20created%20with%20PBandJ%20to%20the%20README:
