@@ -80,7 +80,7 @@ See [below](#-changesets) for more information on how to use changesets.
 
 Once the GitHub Action has been triggered, it will create a PR that will publish your library to npm. Once the PR has been merged, your library will be published to npm!
 
-> Note: Sometimes the GitHub Action can fail, this can be due to a number of reasons most likely it is to do with the name of your package. If this happens, change the name of your package in `package.json`, and try again from step 3.
+> Note: Sometimes the GitHub Action can fail, this can be due to a number of reasons most likely it is to do with the name of your package. If this happens, change the name of your package in `package.json`, and either rerun the action or try again from step 4.
 
 ## 📦 Bundling
 
