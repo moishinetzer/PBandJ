@@ -12,6 +12,7 @@ import {
   lightMagenta,
   white,
 } from "kolorist";
+import fetch from "fetch-lite";
 import type { PackageJson } from "type-fest";
 
 // prettier-ignore
@@ -44,16 +45,25 @@ console.log(
         type: "input",
         name: "libraryName",
         message: "What do you want to call your component library?",
-        validate(input) {
+        async validate(input) {
           const isValid = input.match(
             "^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
           );
 
-          if (isValid) {
-            return true;
-          } else {
+          if (!isValid) {
             return "Please enter a valid npm package name";
           }
+
+          // Check if the package name is already taken
+          const response = await fetch(`https://registry.npmjs.org/${input}`);
+
+          if (response.status === 200) {
+            return "This package name is already taken";
+          } else if (response.status !== 404) {
+            return "Something went wrong, please try again later";
+          }
+
+          return true;
         },
       },
     ])

@@ -51,6 +51,7 @@
     "chalk": "^5.2.0",
     "esbuild-css-modules-plugin": "^2.7.1",
     "eslint": "^8.33.0",
+    "fetch-lite": "^1.1.0",
     "inquirer": "^9.1.4",
     "kolorist": "^1.6.0",
     "postcss": "^8.4.21",
