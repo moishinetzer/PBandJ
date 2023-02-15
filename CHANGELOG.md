@@ -1,5 +1,12 @@
 # compote
 
+## 0.3.1
+
+### Patch Changes
+
+- 4106f62: exit process after finish cli
+- 90afbae: Delete unneeded files
+
 ## 0.3.0
 
 ### Minor Changes
