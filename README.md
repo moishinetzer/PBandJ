@@ -56,7 +56,13 @@ If your account requires 2FA, you will need to generate an `Automation` token, o
 
 Once you have generated your token, you need to add it to your GitHub repository as a secret. This is so that the GitHub Action can use it to publish your library to npm. You can find out how to do this [here][github-secrets].
 
-### 3. Commit a Changeset
+Set the name of the secret to `NPM_TOKEN` and the value to your token.
+
+### 3. Change the GitHub Workflow Permissions
+
+This can be done by going to the `Settings` tab of your repository, then going to `Actions` and then `General` and changing the Workflow Permissions to allow "Read and Write permissions", and make sure the box that says "Allow GitHub Actions to create and approve pull requests" is checked.
+
+### 4. Commit a Changeset
 
 Once you have added your token to GitHub secrets, you need to commit a changeset. Generate your first changeset by running:
 
@@ -68,15 +74,13 @@ Then commit the changeset log to trigger the GitHub Action.
 
 See [below](#-changesets) for more information on how to use changesets.
 
-### 4. Merge the Release PR
+> Note: PBandJ has been configured assuming projects use the `main` branch as the default branch. If you use a different branch, you will need to change the `publish.yml` file in the `.github/workflows` folder to use your default branch. You will also need to change the `config.json` file in the `.changeset` folder to use your default branch.
+
+### 5. Merge the Release PR
 
 Once the GitHub Action has been triggered, it will create a PR that will publish your library to npm. Once the PR has been merged, your library will be published to npm!
 
 > Note: Sometimes the GitHub Action can fail, this can be due to a number of reasons most likely it is to do with the name of your package. If this happens, change the name of your package in `package.json`, and try again from step 3.
-
-### Publishing from a private repository
-
-If you are publishing from a private repository, you need to change the workflow permissions on GitHub. This can be done by going to the `Settings` tab of your repository, then going to `Actions` and then `General` and changing the Workflow Permissions to allow "Read and Write permissions", and make sure the box that says "Allow GitHub Actions to create and approve pull requests" is checked.
 
 ## 📦 Bundling
 
