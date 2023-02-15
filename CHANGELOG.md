@@ -1,5 +1,17 @@
 # compote
 
+## 0.3.0
+
+### Minor Changes
+
+- 8154848: # 🥳 Minor Release
+
+  - CLI checks for existing npm package before creating a new one
+  - General CLI improvements
+  - README fully fleshed out
+  - Prettify dev server
+  - Prettify storybook
+
 ## 0.2.0
 
 ### Minor Changes
