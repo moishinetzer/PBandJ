@@ -143,6 +143,12 @@ console.log(
     stdio: "ignore",
   });
 
+  // delete README.md
+
+  execSync("rm -rf README.md", {
+    stdio: "ignore",
+  });
+
   console.log(
     "\n" +
       bold(blue("cd " + libraryName)) +
