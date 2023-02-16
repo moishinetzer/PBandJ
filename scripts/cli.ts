@@ -144,8 +144,12 @@ console.log(
   });
 
   // delete README.md
-
   execSync("rm -rf README.md", {
+    stdio: "ignore",
+  });
+
+  // delete .gitattributes
+  execSync("rm -rf .gitattributes", {
     stdio: "ignore",
   });
 
