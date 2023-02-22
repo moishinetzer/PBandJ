@@ -15,6 +15,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "AlexMNet",
+      "name": "Alex Maldonado",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66364639?v=4",
+      "profile": "https://www.alexmaldonado.dev/",
+      "contributions": [
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
