@@ -215,6 +215,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://mnetzer.com"><img src="https://avatars.githubusercontent.com/u/11411486?v=4?s=100" width="100px;" alt="Moishi Netzer"/><br /><sub><b>Moishi Netzer</b></sub></a><br /><a href="https://github.com/moishinetzer/PBandJ/commits?author=moishinetzer" title="Code">💻</a> <a href="https://github.com/moishinetzer/PBandJ/commits?author=moishinetzer" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.alexmaldonado.dev/"><img src="https://avatars.githubusercontent.com/u/66364639?v=4?s=100" width="100px;" alt="Alex Maldonado"/><br /><sub><b>Alex Maldonado</b></sub></a><br /><a href="#question-AlexMNet" title="Answering Questions">💬</a></td>
     </tr>
   </tbody>
 </table>
