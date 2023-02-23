@@ -10,6 +10,8 @@
 
 PBandJ is an all-in-one tool to quickly create and publish a high-quality component library, taking care of tedious setup and ensuring best practices. Publish your library to be reused across projects or shared with others!
 
+> PBandJ works just as well for publishing vanilla TypeScript libraries too!
+
 ## What's Inside
 
 - ⚛️ React, with TypeScript by default
