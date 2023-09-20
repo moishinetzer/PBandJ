@@ -11,17 +11,7 @@ export function Button({ type, size }: ButtonProps) {
   return (
     <button
       onClick={() => setCount((count) => count + 1)}
-      className={
-        style.button +
-        " " +
-        (type === "secondary" ? style.secondary : style.primary) +
-        " " +
-        (size === "small"
-          ? style.small
-          : size === "medium"
-          ? style.medium
-          : style.large)
-      }
+      className={"bg-blue-400"}
     >
       Count is {count}
     </button>
