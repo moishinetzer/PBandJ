@@ -33,6 +33,15 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "Cyvid7-Darus10",
+      "name": "Cyrus David Pastelero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61748886?v=4",
+      "profile": "https://cyrus.pastelero.ph/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -40,5 +49,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "PBandJ",
-  "projectOwner": "moishinetzer"
+  "projectOwner": "moishinetzer",
+  "commitType": "docs"
 }
