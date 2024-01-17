@@ -33,6 +33,16 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "MartinPlayon",
+      "name": "MartinPlayon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142259939?v=4",
+      "profile": "https://github.com/MartinPlayon",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -40,5 +50,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "PBandJ",
-  "projectOwner": "moishinetzer"
+  "projectOwner": "moishinetzer",
+  "commitType": "docs"
 }
