@@ -17,6 +17,7 @@
     "build": "run-s build:*",
     "build:lib": "tsup lib/index.ts --dts",
     "build:cli": "tsup scripts/cli.ts --dts --format cjs",
+    "watch": "tsup lib/index.ts --dts --watch",
     "test": "vitest run",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write .",

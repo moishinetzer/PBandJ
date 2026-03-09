@@ -10,7 +10,7 @@ export function Button({ type, size }: ButtonProps) {
 
   return (
     <button
-      onClick={() => setCount((count) => count + 1)}
+      onClick={() => setCount((count) => count + 2)}
       className={
         style.button +
         " " +
